@@ -3,8 +3,8 @@ title: "Introduction to R and the tidyverse"
 author: "Paolo Crosetto"
 fontsize: 9pt
 output:
-  ioslides_presentation: default
   beamer_presentation: default
+  ioslides_presentation: default
 ---
 
 ```{r setup, include=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
