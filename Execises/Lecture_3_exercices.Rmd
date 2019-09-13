@@ -179,6 +179,11 @@ df %>%
 > de quel aéroport partent les vols à plus longue distance?
 
 ```{r ex11}
+df %>%
+  select(origin,distance) %>%
+  group_by(origin) %>%
+  summarise(moyenne = mean(distance, na.rm = T)) %>%
+  summarise(max_distance = max(distance, na.rm = T))
 
 ```
 
